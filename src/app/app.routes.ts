@@ -7,11 +7,11 @@ import { ClientsLayoutComponent } from './layouts/clients-layout/clients-layout.
 export const routes: Routes = [
     {path:'', component: StarterPageComponent },
     {
-        path:'clients', 
+        path:'' , 
         component:ClientsLayoutComponent,
         children:[
-            {path:'', component:ClientsComponent},
-            {path:'select', component:SelectedClientsComponent}
+            {path:'clients', component:ClientsComponent},
+            {path:'clients-select', component:SelectedClientsComponent}
         ]
 
     },

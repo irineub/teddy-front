@@ -1,7 +1,7 @@
 export interface Client {
     id?: number; 
     name: string;
-    salary: number;
-    companyValue: number;
+    salary: string;
+    companyValue: string;
   }
   

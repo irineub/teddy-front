@@ -1,1 +1,15 @@
-<p>starter-page works!</p>
+<div class="container">
+    <form (submit)="handleSubmit($event)">
+      <h1>
+        Olá, seja bem-vindo!
+      </h1>
+      <input 
+        type="text" 
+        placeholder="Digite o seu nome:" 
+        [(ngModel)]="userName" 
+        name="name" 
+        required>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  

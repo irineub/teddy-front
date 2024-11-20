@@ -1,0 +1,151 @@
+@import '../../../../shared/variables';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 50px;
+    height: 100px;
+    box-shadow: 0px 2px 2px 0px #0000001A;
+    background-color: #ffff;
+
+    button {
+        &svg {
+            width: 24px;
+            height: 20px;
+        }
+
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+
+    img {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+
+    p {
+        font-family: $font-inter;
+        font-size: 16px;
+        line-height: 19.36px;
+        font-weight: 400;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary;
+            transition: 0.3s;
+        }
+
+    }
+}
+
+.right {
+    margin-right: 70px;
+    font-family: $font-inter;
+    font-size: 16px;
+    line-height: 19.36px;
+    font-weight: 400;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.active {
+    text-decoration: underline;
+    color: $color-primary;
+
+}
+
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 20px;
+        height: auto;
+        .left{
+            gap:5px;
+            button{
+    
+                svg{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            img{
+                width: 80px !important;
+                height: 40px !important;
+            }
+        }
+        .middle{
+            gap:10px;
+            p{
+                    font-size: 14px !important;
+                }
+            }
+        .right {
+            margin-right: 0;
+            font-size: 12px;
+        }
+        
+        
+    }
+   
+
+}
+
+
+
+
+@media (max-width: 500px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 20px;
+        height: auto;
+        .left{
+            gap:10px;
+            button{
+                svg{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            img {
+                width: 48px !important;
+                height: 24px !important;
+            }
+            margin-right: 5px;
+        }
+        .middle{
+            gap:10px;
+            p{
+                    font-size: 10px !important;
+                }
+            }
+        .right {
+            margin-left: 10px;
+            margin-right: 0;
+            font-size: 10px;
+        }
+        
+        
+    }
+   
+
+}
+

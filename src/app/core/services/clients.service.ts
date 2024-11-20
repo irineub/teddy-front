@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { Client } from '../interfaces/client.model'
+import { Client } from '../interfaces/client.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +12,9 @@ export class ClientsService {
 
   constructor(private http: HttpClient) {}
 
-  getClients(): Observable<Client[]> {
-    return this.http.get<Client[]>(this.apiUrl);
+  getClients(page: number = 1, pageSize: number = 10): Observable<{ clients: Client[], totalItems: number }> {
+    let params = new HttpParams().set('page', page.toString()).set('pageSize', pageSize.toString());
+    return this.http.get<{ clients: Client[], totalItems: number }>(this.apiUrl, { params });
   }
 
   getClientById(id: number): Observable<Client> {
@@ -29,6 +30,7 @@ export class ClientsService {
   }
 
   deleteClient(id: number): Observable<void> {
+    console.log(`deletando`, id)
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }

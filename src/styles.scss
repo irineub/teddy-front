@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import './shared/variables';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.font-inter-700 {
+  font-family: $font-inter;
+  font-weight: 700;
+}
+
+.font-inter-400 {
+  font-family: $font-inter;
+  font-weight: 400;
+}
+
+.ngx-pagination{
+  font-family: $font-inter;
+  .current{
+      background: $color-primary !important;
+      font-family: $font-inter;
+  }
+  li a, .current{
+    border-radius: 4px;
+    font-size: 18px;
+  }
+}
+
+
+.font-geologica-cursive-400 {
+  font-family: $font-geologica;
+  font-weight: 400;
+  font-variation-settings: "slnt" 0, "CRSV" 1, "SHRP" 0;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+  background: #f7f4f4;
+}
