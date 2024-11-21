@@ -1,0 +1,86 @@
+@import '../../../../../shared/variables';
+.container{
+    .is-invalid {
+        border-color: red;
+      }
+      
+      .alert {
+        color: red;
+        font-size: 0.9em;
+      }
+      
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding:20px;
+    input{
+        font-family: $font-inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        padding: 11px 0;
+        padding-left: 14px;
+        border: 2px solid #D9D9D9;
+        width: 360px;
+        
+        &:focus{
+            outline: none;
+        }
+
+    }
+
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }
+    
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .close{
+            cursor: pointer;
+        }
+    }
+    .title{
+        font-family: $font-inter;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+    }
+    .description{
+    font-family: $font-inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+        .clientName{
+            font-weight: 700;
+        }
+
+    }
+    button{
+        padding:11px 0;
+        color:#fff;
+        background: $color-primary;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .container{
+
+        input{
+            width: 230px;
+        }
+    }
+}

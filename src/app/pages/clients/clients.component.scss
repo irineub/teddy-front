@@ -58,9 +58,10 @@ mat-card-footer{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    padding-left:120px;
+    padding-right: 120px;
     button{
-        width: 1180px;
+        width: 100%;
         background: none;
         color: $color-primary;
         font-family: $font-inter;
@@ -131,3 +132,84 @@ mat-card-footer{
   
 
 }
+
+@media (max-width: 1330px) {
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+
+        }
+    
+    }
+
+}
+@media (max-width: 800px) {
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+        .content{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+
+        }
+    
+    }
+
+}
+
+
+
+
+
+@media (max-width: 550px) {
+  
+   .container{
+    padding-left: 10px;
+    padding-right: 10px;
+    .content{
+     grid-template-columns: repeat(1, auto);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ 
+ }
+    button{
+        width: 300px;
+        align-self: center;
+    }
+    .container-top{
+        margin:0;
+        gap: 15px;
+        justify-content: space-around;
+        .foundClients{
+            font-size: 14px;
+            .qtd{
+                font-weight: 700;
+            }
+        }
+        .clientsPerPage{
+        margin-bottom: 10px;
+        font-family: $font-inter;
+        font-size: 12px;
+
+
+            select{
+                width: 50px;
+                height: 25px;
+                background:none;
+                border-radius: 4px;
+                border: 1px solid #D9D9D9;
+                outline: none;
+            }
+        }
+
+    }
+   }
+
+
+}
+

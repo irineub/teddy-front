@@ -30,7 +30,6 @@ export class ClientsService {
   }
 
   deleteClient(id: number): Observable<void> {
-    console.log(`deletando`, id)
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
 }

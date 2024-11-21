@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Client } from '../../core/interfaces/client.model';
-import { ClientsService } from '../../core/services/clients.service';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -18,10 +16,12 @@ import { ClientSelectionService } from '../../core/services/client-selection.ser
 
 export class SelectedClientsComponent {
   selectedClients: any[] = [];
+  qtdSelected = 0;
 
   getSelectedClients(){
     this.clientSelectionService.selectedClients$.subscribe(clients => {
       this.selectedClients = clients;
+      this.qtdSelected ++;
     });
   }
   constructor(private clientSelectionService: ClientSelectionService) {

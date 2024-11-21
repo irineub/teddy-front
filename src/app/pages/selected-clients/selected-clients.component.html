@@ -40,7 +40,7 @@
       </mat-card>
     </div>
     
-    <button (click)="clearSelected()">Limpar Clientes Selecionados</button>
+    <button  *ngIf="selectedClients.length !== 0" (click)="clearSelected()">Limpar Clientes Selecionados</button>
     
 
   </div>

@@ -36,7 +36,7 @@
             </svg>
             
         </span>
-        <span class="edit">
+        <span class="edit" (click)="editDialog(client)">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="20" height="20" fill="url(#pattern0_2086_30)"/>
             <defs>
@@ -48,7 +48,7 @@
             </svg>
             
         </span>
-        <span class="trash" (click)="deleteClient(client.id)">
+        <span class="trash" (click)="deleteDialog(client)">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect width="20" height="20" fill="url(#pattern0_2086_31)"/>
             <defs>
@@ -64,7 +64,7 @@
     </mat-card>
   </div>
   
-  <button>Criar Cliente</button>
+  <button (click)="addDialog()">Criar Cliente</button>
   
   <div class="pagination">
     <pagination-controls 

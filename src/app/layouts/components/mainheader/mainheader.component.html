@@ -1,6 +1,6 @@
 <mat-toolbar  class="header">
     <div class="left">
-        <button>
+        <button (click)="toggleSidenav()">
             <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="24" height="20" fill="url(#pattern0_2780_6261)" />
@@ -18,7 +18,14 @@
     </div>
     <div class="middle">
         <p routerLinkActive="active" routerLink="/clients">Clientes</p>
-        <p routerLinkActive="active" routerLink="/clients-select">Clientes Selecionados</p>
+        <span class="selectedSpan">
+
+            <p routerLinkActive="active" routerLink="/clients-select">Clientes Selecionados 
+        </p>
+        <span class="selectedQtd" >
+            {{qtd()}}
+        </span>
+        </span>
         <p (click)="logout()">Sair</p>
     </div>
     <div class="right">
