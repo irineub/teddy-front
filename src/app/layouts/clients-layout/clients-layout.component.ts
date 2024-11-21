@@ -15,7 +15,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./clients-layout.component.scss']
 })
 export class ClientsLayoutComponent implements OnInit, OnDestroy {
-  sidenavOpen = true;
+  sidenavOpen = false;
   private sidenavSubscription: Subscription | null = null; 
 
   constructor(private utilsService: UtilsService) {}
