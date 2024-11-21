@@ -42,19 +42,18 @@ http://localhost:4200
 ```
 
 
-```
 
 ## Screenshots
 
 ## Screenshots
 
-- [Tela Inicial](https://i.imgur.com/wZTv3j3.png)
-- [Tela Clientes](https://i.imgur.com/LILmab8.png)
-- [Tela Clientes Selecionados](https://i.imgur.com/5nivnM5.png)
-- [Sidebar](https://i.imgur.com/E9DlC6g.png)
-- [Visão Mobile](https://i.imgur.com/eZ1usMA.png)
-- [Criar Cliente](https://i.imgur.com/lT3jDko.png)
-- [Editar Cliente](https://i.imgur.com/zUDlVZK.png)
-- [Apagar Cliente](https://i.imgur.com/HeEF5Op.png)
+- ![Tela Inicial](https://i.imgur.com/wZTv3j3.png)
+- ![Tela Clientes](https://i.imgur.com/LILmab8.png)
+- ![Tela Clientes Selecionados](https://i.imgur.com/5nivnM5.png)
+- ![Sidebar](https://i.imgur.com/E9DlC6g.png)
+- ![Criar Cliente](https://i.imgur.com/lT3jDko.png)
+- ![Editar Cliente](https://i.imgur.com/zUDlVZK.png)
+- ![Apagar Cliente](https://i.imgur.com/HeEF5Op.png)
+- ![Visão Mobile](https://i.imgur.com/eZ1usMA.png)
 
 
