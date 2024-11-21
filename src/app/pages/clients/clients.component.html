@@ -9,7 +9,7 @@
     <span class="clientsPerPage">
       Clientes por página:
       <select [(ngModel)]="pageSize" (change)="onPageChange(1)">
-        <option *ngFor="let size of [10, 16, 25, 50]" [value]="size">{{ size }}</option>
+        <option *ngFor="let size of [10, 12, 16, 25, 50]" [value]="size">{{ size }}</option>
       </select>
     </span>
   </span>

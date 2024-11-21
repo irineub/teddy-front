@@ -1,27 +1,50 @@
-# TeddyFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+# Teddy Teste Técnico Fullstack - Irineu Brito
+#FrontEnd
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Como rodar o projeto:
+Pré-requisitos:
+ - Ter o node instalado em sua maquina.
+ - Ter o backend rodando em sua maquina:
+ https://github.com/irineub/teddy-back
 
-## Code scaffolding
+### 1. Clone o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+  git clone https://github.com/irineub/teddy-front.git
+```
 
-## Build
+### 2. Entre no diretório raiz do projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+  cd teddy-front
+```
+### 3. Execute o comando:
 
-## Running unit tests
+```bash
+    npm install
+```
+- Aguarde até que todos os pacotes sejam instalados.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 4. Execute o comando para rodar a aplicação:
 
-## Running end-to-end tests
+```bash
+    npm start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 5. Acessando a aplicação:
 
-## Further help
+#### Frontend (Angular):
+Abra o navegador e acesse 
+```bash
+http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+```
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
