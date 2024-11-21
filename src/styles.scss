@@ -33,24 +33,12 @@
 *{
     margin:0;
     padding:0;
+    
 }
 body{
   background: #f7f4f4;
+  
 }
-
-.sidenav-modal .mat-dialog-container {
-  padding: 0;
-  border-radius: 0;
-  height: 100vh;
-  margin: 0;
-  max-width: none;
-  position: absolute;
-  left: 0;
-  width: 250px;
+html{
   overflow: hidden;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-}
-.sidenav-modal .cdk-overlay-backdrop {
-  background: transparent !important;
-  box-shadow: none !important;
 }

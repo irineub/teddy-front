@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -15,6 +15,8 @@ import { UtilsService } from '../../../core/services/utils.service';
   styleUrls: ['./mainheader.component.scss']
 })
 export class MainheaderComponent implements OnInit {
+  @Input() toggleSidenav!: () => void;
+
   user$: Observable<any>;
   selectedQtd = 0;
 
@@ -43,7 +45,7 @@ export class MainheaderComponent implements OnInit {
     this.authService.logout();
     this.router.navigate(['/']);
   }
-  toggleSidenav() {
-    this.utilsService.openSidenav();
+  onToggleSidenav() {
+    this.utilsService.toggleSidenav();
   }
 }

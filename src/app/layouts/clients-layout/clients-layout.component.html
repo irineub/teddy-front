@@ -1,4 +1,9 @@
-<app-mainheader></app-mainheader>
-<div>
-    <router-outlet></router-outlet>
-</div>
+<app-mainheader [toggleSidenav]="toggleSidenav"></app-mainheader>
+<mat-sidenav-container>
+    <mat-sidenav [opened]="sidenavOpen">
+        <app-main-sidebar></app-main-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

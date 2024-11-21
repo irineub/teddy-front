@@ -54,6 +54,8 @@ mat-card-footer{
 
 }
 .container{
+    width: 71% ;
+
     justify-self: center;
     padding-top: 30px;
     display: flex;
@@ -74,6 +76,7 @@ mat-card-footer{
         cursor: pointer;
     }
     .container-top{
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -108,6 +111,8 @@ mat-card-footer{
 
     }
     .content{
+        align-self: center;
+
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-areas: none;
@@ -134,9 +139,13 @@ mat-card-footer{
 }
 
 @media (max-width: 1330px) {
+    .container-top{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .container{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         .content{
             display: grid;
             grid-template-columns: repeat(3, auto);
@@ -146,7 +155,12 @@ mat-card-footer{
     }
 
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+    .container-top{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
     .container{
         padding-left: 10px;
         padding-right: 10px;
@@ -182,9 +196,12 @@ mat-card-footer{
         align-self: center;
     }
     .container-top{
-        margin:0;
+        width: 80%;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
         gap: 15px;
-        justify-content: space-around;
+        justify-content: center;
         .foundClients{
             font-size: 14px;
             .qtd{

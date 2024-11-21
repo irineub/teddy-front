@@ -93,7 +93,7 @@
         flex-direction: row;
         align-items: center;
         padding: 15px 20px;
-        height: auto;
+        height: 100px;
         .left{
             gap:5px;
             button{
@@ -137,7 +137,8 @@
         flex-direction: row;
         align-items: center;
         padding: 15px 20px;
-        height: auto;
+        height: 100px;
+
         .left{
             gap:10px;
             button{
@@ -155,13 +156,13 @@
         .middle{
             gap:10px;
             p{
-                    font-size: 10px !important;
+                    font-size: 12px !important;
                 }
             }
         .right {
             margin-left: 10px;
             margin-right: 0;
-            font-size: 10px;
+            font-size: 14px;
         }
         .selectedQtd{
             margin-left: 102px;
